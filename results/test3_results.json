@@ -1,0 +1,25 @@
+{
+  "test_name": "Polarization Cross-Prediction",
+  "test_id": 3,
+  "status": "PASSED",
+  "hierarchy_ratio_comparison": {
+    "mean_fractional_diff": 0.17719518851769797,
+    "max_fractional_diff": 1.0701349500521653,
+    "rh_within_20pct": "True"
+  },
+  "te_prediction": {
+    "chi2": 62.15696804301165,
+    "chi2_dof": 1.6357096853424118,
+    "chi2_reasonable": "True",
+    "correlation": 0.9925465261460448
+  },
+  "fit_parameters": {
+    "eta0": 1.0457688245266044,
+    "alpha_eta": 0.0,
+    "l_star": 100.0
+  },
+  "criteria": {
+    "rh_within_tolerance": "True",
+    "chi2_reasonable": "True"
+  }
+}
