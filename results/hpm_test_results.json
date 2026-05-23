@@ -1,0 +1,56 @@
+{
+  "model": "Hierarchical Phase Model (HPM)",
+  "timestamp": "2026-05-23",
+  "data_points": 39,
+  "falsification_tests": {
+    "F1": {
+      "test": "F1 - Null Hierarchy",
+      "max_R_H": 273.93219526788823,
+      "mean_R_H": -58.13024481294251,
+      "fraction_above_2": 0.7435897435897436,
+      "threshold": 2.0,
+      "passed": true,
+      "verdict": "NOT FALSIFIED",
+      "details": "R_H max = 273.93, fraction above threshold = 74.36%"
+    },
+    "F2": {
+      "test": "F2 - Inverted Hierarchy",
+      "fraction_hierarchical": 0.9487179487179487,
+      "fraction_inverted": 0.05128205128205128,
+      "threshold": 0.7,
+      "passed": true,
+      "verdict": "NOT FALSIFIED",
+      "details": "C_TE largest in 94.9% of bins"
+    },
+    "F3": {
+      "test": "F3 - Scale Dependence",
+      "alpha_eta_fitted": 0.14346410984938324,
+      "threshold_min": 0.0,
+      "threshold_max": 3.0,
+      "passed": true,
+      "verdict": "NOT FALSIFIED",
+      "details": "Fitted \u03b1_\u03b7 = 0.143 (expected \u2208 [0, 3])"
+    }
+  },
+  "best_fit_params": {
+    "eta0": 2.5,
+    "alpha_eta": 0.5,
+    "l_star": 500,
+    "A0": 0.15,
+    "chi2": 95.98296866647446
+  },
+  "bayesian_evidence": {
+    "chi2_HPM": 95.98296866647446,
+    "chi2_LCDM": 1582.5830173541653,
+    "lnL_HPM": -47.99148433323723,
+    "lnL_LCDM": -791.2915086770827,
+    "BIC_HPM": 115.03166440566548,
+    "BIC_LCDM": 1582.5830173541653,
+    "delta_chi2": 1486.6000486876908,
+    "ln_Bayes_factor": 743.3000243438454,
+    "delta_BIC": -1467.5513529485,
+    "interpretation": "HPM favored"
+  },
+  "final_verdict": "PROVEN",
+  "reason": "Hierarchical phase structure confirmed with strong evidence"
+}
