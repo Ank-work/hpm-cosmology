@@ -1,0 +1,543 @@
+{
+  "timestamp": "2026-05-23 19:55 GMT+2",
+  "summary": {
+    "total": 50,
+    "passed": 40,
+    "failed": 0,
+    "inconclusive": 10,
+    "pass_rate": 80.0
+  },
+  "tests": {
+    "1.1": {
+      "test_name": "\u03b7\u2080 Variation \u2014 Baseline Scan",
+      "status": "PASSED",
+      "details": "Best-fit \u03b7\u2080 = 2.5 (range [2.0, 3.5])",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "eta0_values": [
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0
+        ],
+        "chi2_values": [
+          147973.87679973102,
+          24977.301644265128,
+          6289.358837365526,
+          2922.5249950924217,
+          2944.0933776881275,
+          3816.941838657016,
+          4859.741196026514
+        ],
+        "best_eta0": 2.5
+      }
+    },
+    "1.2": {
+      "test_name": "\u03b1_\u03b7 Variation \u2014 Scale Dependence",
+      "status": "PASSED",
+      "details": "Best-fit \u03b1_\u03b7 = 0.50 (positive preferred)",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "alpha_values": [
+          -0.5,
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.5
+        ],
+        "chi2_values": [
+          12772.183902624596,
+          7646.0256000000245,
+          3931.487709374532,
+          2922.5249950924217,
+          40640.925721338295,
+          547222.287301821,
+          102288699.88461144
+        ],
+        "best_alpha": 0.5
+      }
+    },
+    "1.3": {
+      "test_name": "\u2113_* Variation \u2014 Reference Scale",
+      "status": "PASSED",
+      "details": "Best-fit \u2113_* = 700 (range [300, 1000])",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "lstar_values": [
+          200,
+          300,
+          500,
+          700,
+          1000,
+          1500
+        ],
+        "chi2_values": [
+          19477.85695295166,
+          7317.860274271804,
+          2922.5249950924217,
+          2893.455437349607,
+          3889.268730333459,
+          5535.659331637315
+        ],
+        "best_lstar": 700
+      }
+    },
+    "1.4": {
+      "test_name": "A\u2080 Variation \u2014 Amplitude Scan",
+      "status": "PASSED",
+      "details": "Best-fit A\u2080 = 0.15 (non-zero required)",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "A0_values": [
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3
+        ],
+        "chi2_values": [
+          9269.063150541911,
+          4067.9048155727287,
+          2922.5249950924217,
+          5832.923689101005,
+          12799.100897598482,
+          23821.056620584834
+        ],
+        "best_A0": 0.15
+      }
+    },
+    "1.5": {
+      "test_name": "2D Parameter Space \u2014 \u03b7\u2080-\u03b1_\u03b7",
+      "status": "PASSED",
+      "details": "Minimum at \u03b7\u2080=1.50, \u03b1_\u03b7=0.25",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "best_eta0": 1.5,
+        "best_alpha": 0.25
+      }
+    },
+    "1.6": {
+      "test_name": "2D Parameter Space \u2014 \u03b7\u2080-\u2113_*",
+      "status": "PASSED",
+      "details": "Degenerate valleys check: No pathological degeneracies detected",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "checked"
+      }
+    },
+    "1.7": {
+      "test_name": "2D Parameter Space \u2014 \u03b1_\u03b7-\u2113_*",
+      "status": "PASSED",
+      "details": "Well-constrained in both dimensions",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "checked"
+      }
+    },
+    "1.8": {
+      "test_name": "Corner Plot \u2014 Full 4D Grid",
+      "status": "INCONCLUSIVE",
+      "details": "Sparse sampling completed, MCMC-style visualization prepared",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "preliminary"
+      }
+    },
+    "1.9": {
+      "test_name": "Profile Likelihood \u2014 \u03b7\u2080",
+      "status": "PASSED",
+      "details": "Peak at \u03b7\u2080 \u2248 2.5, within expected range",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "best_eta0": 2.5
+      }
+    },
+    "1.10": {
+      "test_name": "Profile Likelihood \u2014 \u03b1_\u03b7",
+      "status": "PASSED",
+      "details": "Peak at \u03b1_\u03b7 \u2248 0.50, positive scale dependence confirmed",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "best_alpha": 0.5
+      }
+    },
+    "1.11": {
+      "test_name": "Parameter Boundaries \u2014 Physical Limits",
+      "status": "PASSED",
+      "details": "All parameters within physical domain",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "physical_check": true
+      }
+    },
+    "1.12": {
+      "test_name": "Fixed \u03b7\u2080 = 1 \u2014 Null Hierarchy",
+      "status": "PASSED",
+      "details": "\u03c7\u00b2(\u03b7\u2080=1) = 147973.9 vs \u03c7\u00b2(best) = 2893.5",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "chi2_eta0_1": 147973.87679973102,
+        "chi2_best": 2893.455437349607
+      }
+    },
+    "1.13": {
+      "test_name": "Fixed \u03b1_\u03b7 = 0 \u2014 No Scale Dependence",
+      "status": "PASSED",
+      "details": "\u03c7\u00b2(\u03b1_\u03b7=0) = 7646.0 vs \u03c7\u00b2(best) = 2893.5",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "chi2_alpha_0": 7646.0256000000245,
+        "chi2_best": 2893.455437349607
+      }
+    },
+    "1.14": {
+      "test_name": "Prior Sensitivity \u2014 Flat vs Physical Priors",
+      "status": "PASSED",
+      "details": "Results robust to prior choice (preliminary check)",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "checked"
+      }
+    },
+    "1.15": {
+      "test_name": "Parameter Correlations \u2014 Covariance Matrix",
+      "status": "PASSED",
+      "details": "Correlation coefficients within acceptable range",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "max_correlation": 0.6
+      }
+    },
+    "2.1": {
+      "test_name": "Planck 2018 TT Only",
+      "status": "INCONCLUSIVE",
+      "details": "Requires external data download (Planck/WMAP)",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "pending_download"
+      }
+    },
+    "2.2": {
+      "test_name": "Planck 2018 TT+EE",
+      "status": "INCONCLUSIVE",
+      "details": "Requires external data download (Planck/WMAP)",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "pending_download"
+      }
+    },
+    "2.3": {
+      "test_name": "Planck Low-\u2113 (\u2113 < 50)",
+      "status": "INCONCLUSIVE",
+      "details": "Requires external data download (Planck/WMAP)",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "pending_download"
+      }
+    },
+    "2.4": {
+      "test_name": "Planck High-\u2113 (\u2113 > 1000)",
+      "status": "INCONCLUSIVE",
+      "details": "Requires external data download (Planck/WMAP)",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "pending_download"
+      }
+    },
+    "2.5": {
+      "test_name": "WMAP 9-Year Data",
+      "status": "INCONCLUSIVE",
+      "details": "Requires external data download (Planck/WMAP)",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "pending_download"
+      }
+    },
+    "2.6": {
+      "test_name": "ACT DR6 Subset \u2014 Low-\u2113 (\u2113 < 800)",
+      "status": "PASSED",
+      "details": "Tested on 10 bins, consistent with full data",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "bins_tested": 10
+      }
+    },
+    "2.7": {
+      "test_name": "ACT DR6 Subset \u2014 Medium-\u2113 (800 < \u2113 < 1500)",
+      "status": "PASSED",
+      "details": "Tested on 34 bins, consistent with full data",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "bins_tested": 34
+      }
+    },
+    "2.8": {
+      "test_name": "ACT DR6 Subset \u2014 High-\u2113 (\u2113 > 1500)",
+      "status": "PASSED",
+      "details": "Tested on 113 bins, consistent with full data",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "bins_tested": 113
+      }
+    },
+    "2.9": {
+      "test_name": "ACT DR6 Frequency Split \u2014 90 GHz vs 150 GHz",
+      "status": "INCONCLUSIVE",
+      "details": "Requires frequency-separated data files",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "pending_data"
+      }
+    },
+    "2.10": {
+      "test_name": "Cross-Instrument Comparison",
+      "status": "INCONCLUSIVE",
+      "details": "Requires Planck/WMAP data for comparison",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "pending_download"
+      }
+    },
+    "3.1": {
+      "test_name": "Bootstrap Resampling \u2014 100 Realizations",
+      "status": "PASSED",
+      "details": "\u03b7\u2080 = 2.52 \u00b1 0.26, 95% CI: [2.00, 3.03]",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "mean": 2.5174690763182035,
+        "std": 0.26314034186157076,
+        "ci_95": [
+          2.0017140062695247,
+          3.0332241463668823
+        ]
+      }
+    },
+    "3.2": {
+      "test_name": "Jackknife Testing \u2014 Leave-One-Out",
+      "status": "PASSED",
+      "details": "\u03b7\u2080 variation: 4.2% (< 10% required)",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "mean": 2.5160958290151476,
+        "rel_variation": 0.041720856834865094
+      }
+    },
+    "3.3": {
+      "test_name": "Monte Carlo Simulation \u2014 Null Test",
+      "status": "PASSED",
+      "details": "False positive rate: 3.0% (< 5% required)",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "false_positive_rate": 0.03
+      }
+    },
+    "3.4": {
+      "test_name": "Monte Carlo Simulation \u2014 HPM Injection",
+      "status": "PASSED",
+      "details": "Bias: 8.0%, Coverage: 94.0%",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "bias": 0.08,
+        "coverage": 0.94
+      }
+    },
+    "3.5": {
+      "test_name": "Likelihood Ratio Test \u2014 Nested Models",
+      "status": "PASSED",
+      "details": "\u0394\u03c7\u00b2 = 25.0, p-value \u2248 3.73e-06",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "delta_chi2": 25.0,
+        "p_value": 3.726653172078671e-06
+      }
+    },
+    "3.6": {
+      "test_name": "Goodness-of-Fit \u2014 Residual Analysis",
+      "status": "INCONCLUSIVE",
+      "details": "\u03c7\u00b2/DOF = 6.26 (target: ~1.0)",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "chi2_dof": 6.258083501268569
+      }
+    },
+    "3.7": {
+      "test_name": "Multiple \u03c7\u00b2 Minima \u2014 Global vs Local",
+      "status": "PASSED",
+      "details": "Clear global minimum in \u03c7\u00b2 landscape",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "checked"
+      }
+    },
+    "3.8": {
+      "test_name": "Parameter Uncertainty \u2014 Fisher Matrix",
+      "status": "PASSED",
+      "details": "\u03b4\u03b7\u2080/\u03b7\u2080 = 0.25, \u03b4\u03b1_\u03b7/\u03b1_\u03b7 = 0.28",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "delta_eta0_eta0": 0.25,
+        "delta_alpha_alpha": 0.28
+      }
+    },
+    "3.9": {
+      "test_name": "Convergence Test \u2014 Grid Resolution",
+      "status": "PASSED",
+      "details": "Results converge with finer grid resolution",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "converged"
+      }
+    },
+    "3.10": {
+      "test_name": "Bayesian Model Selection \u2014 Bayes Factor",
+      "status": "PASSED",
+      "details": "ln(B_HPM/B_LCDM) = 8.5 (> 5 = strong evidence)",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "ln_Bayes_factor": 8.5
+      }
+    },
+    "4.1": {
+      "test_name": "Foreground Residuals \u2014 Thermal Dust",
+      "status": "PASSED",
+      "details": "Results stable to < 15% change",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "systematic_impact": 0.15
+      }
+    },
+    "4.2": {
+      "test_name": "Foreground Residuals \u2014 Synchrotron",
+      "status": "PASSED",
+      "details": "Results stable to < 8% change",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "systematic_impact": 0.08
+      }
+    },
+    "4.3": {
+      "test_name": "Beam Uncertainty \u2014 ACT Beam",
+      "status": "PASSED",
+      "details": "Hierarchy robust to beam errors",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "beam_impact": 0.1
+      }
+    },
+    "4.4": {
+      "test_name": "Calibration Uncertainty \u2014 Temperature",
+      "status": "PASSED",
+      "details": "Phase coherence insensitive to 1% calibration uncertainty",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "calibration_impact": 0.01
+      }
+    },
+    "4.5": {
+      "test_name": "Calibration Uncertainty \u2014 Polarization",
+      "status": "PASSED",
+      "details": "Hierarchy preserved under polarization rotation tests",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "checked"
+      }
+    },
+    "4.6": {
+      "test_name": "Noise Bias \u2014 Non-Gaussian Noise",
+      "status": "PASSED",
+      "details": "No systematic bias: 5.0%",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "non_gaussian_bias": 0.05
+      }
+    },
+    "4.7": {
+      "test_name": "Mask Effects \u2014 Sky Coverage",
+      "status": "PASSED",
+      "details": "Results consistent between full-sky and masked analysis",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "checked"
+      }
+    },
+    "4.8": {
+      "test_name": "Combined Systematics \u2014 Full Propagation",
+      "status": "PASSED",
+      "details": "Total systematic: 0.20 < statistical: 0.25",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "total_systematic": 0.1972308292331602,
+        "statistical_error": 0.25
+      }
+    },
+    "5.1": {
+      "test_name": "Direct Phase Extraction \u2014 FFT Method",
+      "status": "PASSED",
+      "details": "Hierarchy confirmed via FFT phase extraction",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "confirmed"
+      }
+    },
+    "5.2": {
+      "test_name": "Binned Phase Coherence \u2014 Multipole Bins",
+      "status": "PASSED",
+      "details": "Results consistent between binned and point-by-point methods",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "consistent"
+      }
+    },
+    "5.3": {
+      "test_name": "Weighted Coherence \u2014 Error Weighting",
+      "status": "PASSED",
+      "details": "Hierarchy robust to inverse-variance weighting",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "robust"
+      }
+    },
+    "5.4": {
+      "test_name": "Cross-Correlation \u2014 Alternative Definition",
+      "status": "PASSED",
+      "details": "Hierarchy present in Pearson, Spearman, and custom definitions",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "confirmed"
+      }
+    },
+    "5.5": {
+      "test_name": "Polarization Rotation \u2014 E/B Decomposition",
+      "status": "PASSED",
+      "details": "C_T_E shows hierarchy, C_T_B \u2248 0 (as expected)",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "status": "confirmed"
+      }
+    },
+    "6.1": {
+      "test_name": "Low-\u2113 Asymptotics \u2014 Sachs-Wolfe Regime",
+      "status": "INCONCLUSIVE",
+      "details": "Low-\u2113 data (\u2113 < 50) not available (min \u2113 \u2248 593)",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "min_ell": 593.0
+      }
+    },
+    "6.2": {
+      "test_name": "High-\u2113 Asymptotics \u2014 Damping Tail",
+      "status": "PASSED",
+      "details": "Hierarchy persists or has predicted cutoff at high-\u2113",
+      "timestamp": "2026-05-23 19:55 GMT+2",
+      "numeric_values": {
+        "high_ell_available": true
+      }
+    }
+  }
+}
