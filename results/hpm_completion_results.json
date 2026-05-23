@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-05-23 20:49 GMT+2",
+  "completed_tests": {
+    "2.1": {
+      "status": "FAILED",
+      "details": "\u03c7\u00b2/DOF = 23657.92, hierarchy fraction = 34.1%",
+      "chi2_dof": 23657.917907922572,
+      "hierarchy_fraction": 0.34146341463414637
+    },
+    "2.2": {
+      "status": "FAILED",
+      "details": "Combined analysis: \u03c7\u00b2/DOF = 23657.92",
+      "chi2_dof": 23657.917907922572
+    },
+    "2.3": {
+      "status": "FAILED",
+      "details": "Low-\u2113 \u03c7\u00b2/DOF = 67548.66 (14 bins)",
+      "chi2_dof": 67548.65643615136,
+      "n_bins": 14
+    },
+    "2.4": {
+      "status": "PASSED",
+      "details": "High-\u2113 \u03c7\u00b2/DOF = 7.67 (10 bins)",
+      "chi2_dof": 7.669485321451371,
+      "n_bins": 10
+    },
+    "2.5": {
+      "status": "FAILED",
+      "details": "Full Planck analysis: \u03c7\u00b2/DOF = 23657.92",
+      "chi2_dof": 23657.917907922572,
+      "total_bins": 41
+    },
+    "2.10": {
+      "status": "FAILED",
+      "details": "Cross-instrument: mean diff = 0.082\u00b10.019, \u03c7\u00b2/DOF = 0.50",
+      "mean_diff": 0.08212903225806452,
+      "std_diff": 0.01900592765850302,
+      "chi2_dof": 0.5012699725436686,
+      "common_bins": 31
+    },
+    "2.9": {
+      "status": "PASSED",
+      "details": "90GHz \u03b7=2.50\u00b10.12, 150GHz \u03b7=2.50\u00b10.12, \u0394=0.02\u03c3",
+      "eta_90_mean": 2.50419052412275,
+      "eta_90_std": 0.12238181489684824,
+      "eta_150_mean": 2.500525617130897,
+      "eta_150_std": 0.11880291256332362,
+      "difference_sigma": 0.02148722558064269
+    },
+    "1.8": {
+      "status": "PASSED",
+      "details": "MCMC: 2000 samples, acceptance 0.80%",
+      "n_samples": 2000,
+      "acceptance_rate": 0.008,
+      "posterior_stats": {
+        "eta0": {
+          "mean": 1.5252106896801816,
+          "std": 0.015542800903611625,
+          "median": 1.5209391243496755,
+          "ci_16": 1.5112864775657628,
+          "ci_84": 1.5467601676573002
+        },
+        "alpha_eta": {
+          "mean": 0.10809131813686165,
+          "std": 0.005971745890210028,
+          "median": 0.10527871407558137,
+          "ci_16": 0.10339089697244705,
+          "ci_84": 0.11675723738421882
+        },
+        "l_star": {
+          "mean": 308.1041287711709,
+          "std": 97.07059302483187,
+          "median": 222.29751197157591,
+          "ci_16": 218.50276447974906,
+          "ci_84": 391.0313051819648
+        },
+        "A0": {
+          "mean": 0.2263998052306024,
+          "std": 0.003754210476901277,
+          "median": 0.22508240987677613,
+          "ci_16": 0.22330983407799634,
+          "ci_84": 0.23335928710176695
+        }
+      },
+      "corner_plot_file": "/root/obsidian-vault/research/new-research/new-theory-v2/figures/hpm_corner_plot_mcmc.txt"
+    },
+    "3.6": {
+      "status": "FAILED",
+      "details": "\u03c7\u00b2/DOF improved from 23657.92 to 169.00",
+      "chi2_dof_initial": 23657.917907922572,
+      "chi2_dof_refinement": 169.00274622539632,
+      "improvement": 23488.915161697176,
+      "refined_params": {
+        "eta0": 2.0,
+        "alpha_eta": 0.0,
+        "l_star": 300,
+        "A0": 0.1,
+        "beta": 0.0
+      }
+    }
+  },
+  "final_chi2_dof": 169.00274622539632,
+  "refined_params": {
+    "eta0": 2.0,
+    "alpha_eta": 0.0,
+    "l_star": 300,
+    "A0": 0.1,
+    "beta": 0.0
+  },
+  "summary": {
+    "total_completed": 9,
+    "passed": 3,
+    "failed": 6,
+    "final_chi2_dof": 169.00274622539632
+  }
+}
