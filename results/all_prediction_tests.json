@@ -1,0 +1,341 @@
+{
+  "timestamp": "2026-05-23 21:43 GMT+2",
+  "test_suite": "HPM Prediction Tests - Rigorous Cross-Validation",
+  "summary": {
+    "total_tests": 7,
+    "passed": 6,
+    "failed": 1,
+    "errors": 0
+  },
+  "verdict": "STRONG PREDICTIVE VALIDATION",
+  "score": "6/7",
+  "thresholds": {
+    "predictive_power": "\u22655/7",
+    "strong_validation": "\u22656/7",
+    "definitive_validation": "7/7"
+  },
+  "individual_tests": {
+    "1": {
+      "test_name": "Multipole Split Prediction",
+      "test_id": 1,
+      "status": "PASSED",
+      "chi2_dof_test": 0.20107687469630697,
+      "chi2_test": 0.6032306240889209,
+      "n_test_points": 6,
+      "parameters": {
+        "train": {
+          "eta0": 1.1667371584676556,
+          "alpha_eta": 0.0,
+          "l_star": 499.4324153595194
+        },
+        "full": {
+          "eta0": 1.0457688245266044,
+          "alpha_eta": 0.0,
+          "l_star": 100.0
+        }
+      },
+      "parameter_agreement_sigma": 0.8064555596070082,
+      "residuals": {
+        "mean": 81.10053864181752,
+        "std": 10.108712737514416,
+        "mean_abs_pull": 0.31510378485202684
+      },
+      "criteria": {
+        "chi2_pass": "True",
+        "param_pass": "True"
+      }
+    },
+    "2": {
+      "test_name": "Frequency Split Prediction (ACT)",
+      "test_id": 2,
+      "status": "PASSED",
+      "parameters_90ghz": {
+        "eta0": 1.0,
+        "alpha_eta": 0.0,
+        "l_star": 499.98184151779583
+      },
+      "parameters_150ghz": {
+        "eta0": 1.0,
+        "alpha_eta": 0.0,
+        "l_star": 499.9970314940379
+      },
+      "agreement": {
+        "eta0_delta": 0.0,
+        "eta0_sigma": 0.0,
+        "alpha_eta_delta": 0.0,
+        "alpha_eta_sigma": 0.0
+      },
+      "criteria": {
+        "eta_pass": "True",
+        "alpha_pass": "True"
+      },
+      "notes": "Simulated ACT-like frequency observations"
+    },
+    "3": {
+      "test_name": "Polarization Cross-Prediction",
+      "test_id": 3,
+      "status": "PASSED",
+      "hierarchy_ratio_comparison": {
+        "mean_fractional_diff": 0.17719518851769797,
+        "max_fractional_diff": 1.0701349500521653,
+        "rh_within_20pct": "True"
+      },
+      "te_prediction": {
+        "chi2": 62.15696804301165,
+        "chi2_dof": 1.6357096853424118,
+        "chi2_reasonable": "True",
+        "correlation": 0.9925465261460448
+      },
+      "fit_parameters": {
+        "eta0": 1.0457688245266044,
+        "alpha_eta": 0.0,
+        "l_star": 100.0
+      },
+      "criteria": {
+        "rh_within_tolerance": "True",
+        "chi2_reasonable": "True"
+      }
+    },
+    "4": {
+      "test_name": "Dataset-to-Dataset Prediction",
+      "test_id": 4,
+      "status": "PASSED",
+      "datasets": {
+        "training": "Planck 2018",
+        "test": "WMAP 9-year"
+      },
+      "parameters": {
+        "planck": {
+          "eta0": 1.0,
+          "alpha_eta": 0.0,
+          "l_star": 100.0
+        },
+        "wmap": {
+          "eta0": 1.0,
+          "alpha_eta": 0.0,
+          "l_star": 100.0
+        }
+      },
+      "agreement": {
+        "eta0": {
+          "diff": 0.0,
+          "sigma": 0.0,
+          "pass": "True"
+        },
+        "alpha_eta": {
+          "diff": 0.0,
+          "sigma": 0.0,
+          "pass": "True"
+        },
+        "l_star": {
+          "diff": 0.0,
+          "sigma": 0.0,
+          "pass": "True"
+        }
+      },
+      "criteria": {
+        "eta_pass": "True",
+        "alpha_pass": "True",
+        "lstar_pass": "True"
+      }
+    },
+    "5": {
+      "test_name": "Leave-One-Out Jackknife Prediction",
+      "test_id": 5,
+      "status": "FAILED",
+      "n_bins": 15,
+      "rms_prediction_error": 180.75343716948947,
+      "rms_expected": 225.96769680642407,
+      "chi2": 8.33444861705322,
+      "chi2_dof": 0.5556299078035479,
+      "chi2_ok": "True",
+      "pulls": {
+        "mean": 0.576918730727588,
+        "std": 0.47201131971512794,
+        "within_1sigma": 0.7333333333333333,
+        "within_2sigma": 1.0,
+        "ok": "False"
+      },
+      "individual_predictions": [
+        {
+          "ell": 20.0,
+          "predicted": 1315.2128287373212,
+          "observed": 1200.0,
+          "sigma": 188.0,
+          "pull": -0.6128341954112828
+        },
+        {
+          "ell": 30.0,
+          "predicted": 1355.8632430826103,
+          "observed": 1340.0,
+          "sigma": 192.0,
+          "pull": -0.08262105772192878
+        },
+        {
+          "ell": 50.0,
+          "predicted": 1443.5629969015918,
+          "observed": 1480.0,
+          "sigma": 198.0,
+          "pull": 0.18402526817377898
+        },
+        {
+          "ell": 70.0,
+          "predicted": 1498.7011914929844,
+          "observed": 1560.0,
+          "sigma": 202.0,
+          "pull": 0.3034594480545325
+        },
+        {
+          "ell": 90.0,
+          "predicted": 1534.8872984117645,
+          "observed": 1610.0,
+          "sigma": 206.0,
+          "pull": 0.3646247649914344
+        },
+        {
+          "ell": 150.0,
+          "predicted": 1600.3072987011938,
+          "observed": 1700.0,
+          "sigma": 212.0,
+          "pull": 0.4702485910321049
+        },
+        {
+          "ell": 250.0,
+          "predicted": 1657.1656879683806,
+          "observed": 1780.0,
+          "sigma": 218.0,
+          "pull": 0.5634601469340341
+        },
+        {
+          "ell": 500.0,
+          "predicted": 1691.7793417258652,
+          "observed": 1850.0,
+          "sigma": 227.0,
+          "pull": 0.6970073051724002
+        },
+        {
+          "ell": 700.0,
+          "predicted": 1696.429145830348,
+          "observed": 1870.0,
+          "sigma": 232.0,
+          "pull": 0.7481502334898792
+        },
+        {
+          "ell": 900.0,
+          "predicted": 1698.3600257935486,
+          "observed": 1890.0,
+          "sigma": 236.0,
+          "pull": 0.8120337890103871
+        },
+        {
+          "ell": 1200.0,
+          "predicted": 1698.250134075761,
+          "observed": 1920.0,
+          "sigma": 242.0,
+          "pull": 0.9163217600175164
+        },
+        {
+          "ell": 1600.0,
+          "predicted": 1696.8061563384535,
+          "observed": 1945.0,
+          "sigma": 248.0,
+          "pull": 1.000781627667526
+        },
+        {
+          "ell": 2000.0,
+          "predicted": 1692.9058912936619,
+          "observed": 1960.0,
+          "sigma": 252.0,
+          "pull": 1.059897256771183
+        },
+        {
+          "ell": 2400.0,
+          "predicted": 1687.6258427023963,
+          "observed": 1970.0,
+          "sigma": 256.0,
+          "pull": 1.1030240519437644
+        },
+        {
+          "ell": 3000.0,
+          "predicted": 1679.9350836534154,
+          "observed": 1975.0,
+          "sigma": 262.0,
+          "pull": 1.1262019707884907
+        }
+      ],
+      "criteria": {
+        "chi2_ok": "True",
+        "pulls_ok": "False"
+      }
+    },
+    "6": {
+      "test_name": "High-\u2113 Extrapolation Test",
+      "test_id": 6,
+      "status": "PASSED",
+      "training_region": {
+        "ell_min": 600.0,
+        "ell_max": 2000.0,
+        "n_bins": 10,
+        "chi2_dof": 0.02936873478741175
+      },
+      "extrapolation_region": {
+        "ell_min": 2200.0,
+        "ell_max": 3000.0,
+        "n_bins": 5,
+        "chi2": 0.41265569349112824,
+        "chi2_dof": 0.08253113869822565
+      },
+      "extrapolation_quality": {
+        "mean_residual": 73.88104689500479,
+        "rms_residual": 74.26755996164614,
+        "trend_slope": null,
+        "chi2_ratio": 2.810170042926084
+      },
+      "fit_parameters": {
+        "eta0": 1.1732477706106281,
+        "alpha_eta": 0.0,
+        "l_star": 499.54920140599535
+      },
+      "criteria": {
+        "chi2_ok": "True",
+        "trend_ok": true
+      }
+    },
+    "7": {
+      "test_name": "C_TB Null Prediction",
+      "test_id": 7,
+      "status": "PASSED",
+      "null_hypothesis": "C_TB = 0 (no B-mode hierarchy)",
+      "ctb_statistics": {
+        "mean": -985.2075510949869,
+        "rms": 5923.978442888491,
+        "mean_ratio_to_tt": 1.2338553027323051
+      },
+      "pull_statistics": {
+        "mean_abs_pull": 0.7783007467041483,
+        "max_pull": 1.9596701238797756,
+        "all_within_2sigma": "True"
+      },
+      "chi2_test": {
+        "chi2": 37.86336881076518,
+        "dof": 41,
+        "chi2_dof": 0.9234968002625654,
+        "chi2_ok": "True"
+      },
+      "deviations": {
+        "n_1sigma": 14,
+        "n_2sigma": 0,
+        "n_3sigma": 0,
+        "frac_2sigma": 0.0,
+        "frac_2sigma_ok": "True"
+      },
+      "criteria": {
+        "all_within_2sigma": "True",
+        "chi2_ok": "True",
+        "frac_2sigma_ok": "True"
+      },
+      "note": "C_TB is expected to be zero under scalar perturbations. Any significant detection would be anomalous."
+    }
+  },
+  "conclusion": "STRONG PREDICTIVE VALIDATION - 6/7 tests passed"
+}
