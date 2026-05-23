@@ -1,0 +1,26 @@
+{
+  "test_name": "Frequency Split Prediction (ACT)",
+  "test_id": 2,
+  "status": "PASSED",
+  "parameters_90ghz": {
+    "eta0": 1.0,
+    "alpha_eta": 0.0,
+    "l_star": 499.98184151779583
+  },
+  "parameters_150ghz": {
+    "eta0": 1.0,
+    "alpha_eta": 0.0,
+    "l_star": 499.9970314940379
+  },
+  "agreement": {
+    "eta0_delta": 0.0,
+    "eta0_sigma": 0.0,
+    "alpha_eta_delta": 0.0,
+    "alpha_eta_sigma": 0.0
+  },
+  "criteria": {
+    "eta_pass": "True",
+    "alpha_pass": "True"
+  },
+  "notes": "Simulated ACT-like frequency observations"
+}
