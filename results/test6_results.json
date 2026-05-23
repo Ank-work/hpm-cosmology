@@ -1,0 +1,33 @@
+{
+  "test_name": "High-\u2113 Extrapolation Test",
+  "test_id": 6,
+  "status": "PASSED",
+  "training_region": {
+    "ell_min": 600.0,
+    "ell_max": 2000.0,
+    "n_bins": 10,
+    "chi2_dof": 0.02936873478741175
+  },
+  "extrapolation_region": {
+    "ell_min": 2200.0,
+    "ell_max": 3000.0,
+    "n_bins": 5,
+    "chi2": 0.41265569349112824,
+    "chi2_dof": 0.08253113869822565
+  },
+  "extrapolation_quality": {
+    "mean_residual": 73.88104689500479,
+    "rms_residual": 74.26755996164614,
+    "trend_slope": null,
+    "chi2_ratio": 2.810170042926084
+  },
+  "fit_parameters": {
+    "eta0": 1.1732477706106281,
+    "alpha_eta": 0.0,
+    "l_star": 499.54920140599535
+  },
+  "criteria": {
+    "chi2_ok": "True",
+    "trend_ok": true
+  }
+}
