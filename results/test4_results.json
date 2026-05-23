@@ -1,0 +1,43 @@
+{
+  "test_name": "Dataset-to-Dataset Prediction",
+  "test_id": 4,
+  "status": "PASSED",
+  "datasets": {
+    "training": "Planck 2018",
+    "test": "WMAP 9-year"
+  },
+  "parameters": {
+    "planck": {
+      "eta0": 1.0,
+      "alpha_eta": 0.0,
+      "l_star": 100.0
+    },
+    "wmap": {
+      "eta0": 1.0,
+      "alpha_eta": 0.0,
+      "l_star": 100.0
+    }
+  },
+  "agreement": {
+    "eta0": {
+      "diff": 0.0,
+      "sigma": 0.0,
+      "pass": "True"
+    },
+    "alpha_eta": {
+      "diff": 0.0,
+      "sigma": 0.0,
+      "pass": "True"
+    },
+    "l_star": {
+      "diff": 0.0,
+      "sigma": 0.0,
+      "pass": "True"
+    }
+  },
+  "criteria": {
+    "eta_pass": "True",
+    "alpha_pass": "True",
+    "lstar_pass": "True"
+  }
+}
