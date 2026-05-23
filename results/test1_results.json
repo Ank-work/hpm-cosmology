@@ -1,0 +1,30 @@
+{
+  "test_name": "Multipole Split Prediction",
+  "test_id": 1,
+  "status": "PASSED",
+  "chi2_dof_test": 0.20107687469630697,
+  "chi2_test": 0.6032306240889209,
+  "n_test_points": 6,
+  "parameters": {
+    "train": {
+      "eta0": 1.1667371584676556,
+      "alpha_eta": 0.0,
+      "l_star": 499.4324153595194
+    },
+    "full": {
+      "eta0": 1.0457688245266044,
+      "alpha_eta": 0.0,
+      "l_star": 100.0
+    }
+  },
+  "parameter_agreement_sigma": 0.8064555596070082,
+  "residuals": {
+    "mean": 81.10053864181752,
+    "std": 10.108712737514416,
+    "mean_abs_pull": 0.31510378485202684
+  },
+  "criteria": {
+    "chi2_pass": "True",
+    "param_pass": "True"
+  }
+}
