@@ -1,0 +1,35 @@
+{
+  "test_name": "C_TB Null Prediction",
+  "test_id": 7,
+  "status": "PASSED",
+  "null_hypothesis": "C_TB = 0 (no B-mode hierarchy)",
+  "ctb_statistics": {
+    "mean": -985.2075510949869,
+    "rms": 5923.978442888491,
+    "mean_ratio_to_tt": 1.2338553027323051
+  },
+  "pull_statistics": {
+    "mean_abs_pull": 0.7783007467041483,
+    "max_pull": 1.9596701238797756,
+    "all_within_2sigma": "True"
+  },
+  "chi2_test": {
+    "chi2": 37.86336881076518,
+    "dof": 41,
+    "chi2_dof": 0.9234968002625654,
+    "chi2_ok": "True"
+  },
+  "deviations": {
+    "n_1sigma": 14,
+    "n_2sigma": 0,
+    "n_3sigma": 0,
+    "frac_2sigma": 0.0,
+    "frac_2sigma_ok": "True"
+  },
+  "criteria": {
+    "all_within_2sigma": "True",
+    "chi2_ok": "True",
+    "frac_2sigma_ok": "True"
+  },
+  "note": "C_TB is expected to be zero under scalar perturbations. Any significant detection would be anomalous."
+}
